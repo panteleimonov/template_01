@@ -1,2 +1,50 @@
-*
-    box-sizing: border-box
+@import 'vars'
+
+@import 'grid'
+@import 'fonts'
+
+@import 'interface'
+@import 'blocks/navbar'
+
+
+
+.header
+    background: #f2f2f2 no-repeat center
+    background-size: cover
+    min-height: 100vh
+    position: relative
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(#222, 0.38)
+
+.hero
+    .wrapper
+        background-color: rgba(#fff, 1)
+        max-width: 40%
+        padding: 2rem 2.75rem 3rem
+        box-shadow: $box_shadow
+        .btn
+            width: 100%
+        //margin: auto
+        //text-align: center
+    position: relative
+    z-index: 2
+    align-items: center
+    justify-content: center
+    display: flex
+    color: #222
+    height: 100vh
+    padding-top: 80px
+    span
+        display: block
+        // margin-bottom: 1.2em
+        line-height: 1.5
+        font-size: 18px
+        //+fontBold
